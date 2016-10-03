@@ -5,6 +5,25 @@
   <title>Traducir palabras/title>
 </head>
 <body>
-  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="main.js">
+  	var palabra = prompt('ingrese alguna de estas palabras: casa, mesa, perro, gato')
+switch(palabra){
+	case('casa') :
+		console.log('house');
+	break;
+	case('mesa') :
+		console.log('table');
+	break;
+	case('perro') :
+		console.log('dog');
+	break;
+	case('gato') :
+		console.log('cat');
+	break;
+	default:
+		console.log('no hay traduccion');
+	
+}
+  </script>
 </body>
 </html>

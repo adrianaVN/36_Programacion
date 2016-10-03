@@ -5,6 +5,47 @@
   <title>Censo provincial</title>
 </head>
 <body>
-  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="main.js">
+  	var femenino=1;
+var masculino=1;
+var sumarM=0;
+var sumarF=0;
+var cantidadM=0;
+var vantidadF=0;
+var edadM=0;
+alert('para finalizar el programa ingrese 0 en el numero de documento');
+var cantidadTotal= parseInt(prompt('ingrese cantidad total de personas censadas '));
+for(var i=0;i<cantidadTotal; i++){
+	if(cantidadTotal>=0){
+		var NumeroDeDocumento=parseInt(prompt('ingrese numero de documento'));
+		console.log('numero de documento ' + NumeroDeDocumento);
+		var sexo= prompt('ingrese sexo')
+		switch(sexo){
+			case('femenino'):
+				console.log('femenino');
+				sumarF=sumarF+femenino;
+				var edad = parseInt(prompt('ingresar edad'));
+				console.log('Edad' + edad);
+			break;
+			case('masculino'):
+				console.log('masculino');
+				sumarM=sumarM+masculino;
+				var edad = parseInt(prompt('ingresar edad'));
+				console.log('Edad' + edad);
+				if(edad>16 && edad<65 ){
+				edadM=edadM++;
+				
+		}
+			break;
+		}
+	}
+}
+console.log('cantidad de personas censadas'+cantidadTotal);
+var TotatFemenino=TotatFemenino+sumarF;
+console.log('cantidad total de mujeres ' + sumarF);
+var TotalMasculino=TotalMasculino+sumarM;
+console.log('cantidad total de hombres ' + sumarM);
+console.log('varones entre 16 y 65 años ' + edadM);
+  </script>
 </body>
 </html>
